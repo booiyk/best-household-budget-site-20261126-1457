@@ -24,10 +24,6 @@
     return { path: path, query: query };
   }
 
-  function go(path) {
-    global.location.hash = '#/' + path;
-  }
-
   function render() {
     var route = parseHash();
     var view = ROUTES[route.path];
